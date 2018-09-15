@@ -15,6 +15,7 @@
     "webpack-merge": "^4.1.4",
     "html-webpack-plugin": "^3.2.0",
     "webpack-dev-server": "^3.1.8",
+    "webpack-bundle-analyzer": "^3.0.2",
 
     "babel-loader": "^8.0.2",
     "@babel/core": "^7.0.0",
@@ -34,6 +35,7 @@
     "start": "cross-env NODE_ENV=development webpack-dev-server --config webpack/dev.config.js",
     "start-prod": "cross-env NODE_ENV=production webpack-dev-server --config webpack/prod.config.js",
     "build": "cross-env NODE_ENV=development webpack --config webpack/dev.config.js",
-    "build-prod": "cross-env NODE_ENV=production webpack --config webpack/prod.config.js"
+    "build-prod": "cross-env NODE_ENV=production webpack --config webpack/prod.config.js",
+    "analyze-bundle": "cross-env NODE_ENV=production webpack --config webpack/prod.config.js --json > dist/compilation-stats.json && webpack-bundle-analyzer dist/compilation-stats.json"
   }
 }
