@@ -12,8 +12,9 @@ module.exports = {
     plugins: ['react'],
 
     // for the full list of recommended rules see: https://eslint.org/docs/rules/
-    extends: ['eslint:recommended'],
+    extends: ['eslint:recommended', 'plugin:react/recommended'],
 
+    parser: 'babel-eslint',
     parserOptions: {
         ecmaVersion: 8,
         sourceType: 'module',
@@ -24,7 +25,8 @@ module.exports = {
     },
 
     env: {
-        browser: true
+        browser: true,
+        es6: true
     },
 
     rules: {

@@ -1,7 +1,7 @@
 /* eslint-env node */
 
 const merge = require('webpack-merge');
-const baseConfig = require('./base.config.js');
+const baseConfig = require('./common.config.js');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 // overwrite default HTML config to minify on production
@@ -13,8 +13,11 @@ HtmlWebpackPluginConfig.options.minify = {
 module.exports = merge(baseConfig, {
     mode: 'production',
 
-    // gzip content
     devServer: {
-        compress: true
+        // gzip content
+        compress: true,
+        // enable https
+        https: true
     }
+
 });

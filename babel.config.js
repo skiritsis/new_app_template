@@ -5,7 +5,8 @@ const plugins = [
         useESModules: true
     }],
     '@babel/plugin-syntax-jsx',
-    '@babel/plugin-transform-react-jsx'
+    '@babel/plugin-transform-react-jsx',
+    '@babel/plugin-proposal-class-properties'
 ];
 
 if(process.env.node === 'development'){
