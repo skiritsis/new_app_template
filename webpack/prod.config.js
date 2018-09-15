@@ -1,16 +1,16 @@
 /* eslint-env node */
 
 const merge = require('webpack-merge');
-const baseConfig = require('./common.config.js');
+const commonConfig = require('./common.config.js');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 // overwrite default HTML config to minify on production
-const HtmlWebpackPluginConfig = baseConfig.plugins.find(plugin => plugin instanceof HtmlWebpackPlugin);
+const HtmlWebpackPluginConfig = commonConfig.plugins.find(plugin => plugin instanceof HtmlWebpackPlugin);
 HtmlWebpackPluginConfig.options.minify = {
     collapseWhitespace: true
 };
 
-module.exports = merge(baseConfig, {
+module.exports = merge(commonConfig, {
     mode: 'production',
 
     devServer: {
@@ -19,5 +19,4 @@ module.exports = merge(baseConfig, {
         // enable https
         https: true
     }
-
 });

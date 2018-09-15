@@ -1,9 +1,9 @@
 /* eslint-env node */
 
 const merge = require('webpack-merge');
-const baseConfig = require('./common.config.js');
+const commonConfig = require('./common.config.js');
 
-module.exports = merge(baseConfig, {
+module.exports = merge(commonConfig, {
     mode: 'development',
 
     // enable source-map generation
