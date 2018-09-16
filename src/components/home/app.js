@@ -13,6 +13,9 @@ export default class App extends Component{
                 <div>
                     <Link to={'/page2'}>Page 2</Link>
                 </div>
+                <div>
+                    <Link to={'/test-page'}>Not found page</Link>
+                </div>
             </div>
         );
     }
