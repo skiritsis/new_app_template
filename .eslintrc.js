@@ -67,6 +67,8 @@ module.exports = {
             'allowArrowFunctions': true,
             'allowFunctions': false,
             'allowBind': false
-        }]
+        }],
+        // disable prop-types validation since we use Typescript
+        'react/prop-types': OFF
     }
 };

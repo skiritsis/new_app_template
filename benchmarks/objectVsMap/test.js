@@ -1,5 +1,5 @@
-import TestObject from '../../benchmarks/objectVSmap/object';
-import TestMap from '../../benchmarks/objectVSmap/map';
+import TestObject from './/object';
+import TestMap from './/map';
 
 export default class Test{
 

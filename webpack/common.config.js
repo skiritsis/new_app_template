@@ -32,6 +32,12 @@ module.exports = {
         ]
     },
 
+    devServer: {
+        // when using the HTML5 History API which is used by React Router, the index.html page will
+        // likely have to be served in place of any 404 responses instead of trying to locale the actual file
+        historyApiFallback: true
+    },
+
     plugins: [
         new HtmlWebpackPlugin({
             filename: 'index.html',
