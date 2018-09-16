@@ -29,6 +29,11 @@ module.exports = {
         es6: true
     },
 
+    // set by webpack during compile time
+    globals: {
+        ENVIRONMENT: false
+    },
+
     rules: {
         'semi': WARNING,
         'array-bracket-spacing': WARNING,

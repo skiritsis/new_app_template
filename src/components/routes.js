@@ -2,25 +2,30 @@ import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Loadable from 'react-loadable';
 import Loading from 'components/loading/loading';
+import { config } from 'configs';
 
 const LoadableApp = Loadable({
     loader: () => import('components/home/app'),
-    loading: Loading
+    loading: Loading,
+    delay: config.componentLazyLoadDelay
 });
 
 const LoadablePage1 = Loadable({
     loader: () => import('components/pages/page1'),
-    loading: Loading
+    loading: Loading,
+    delay: config.componentLazyLoadDelay
 });
 
 const LoadablePage2 = Loadable({
     loader: () => import('components/pages/page2'),
-    loading: Loading
+    loading: Loading,
+    delay: config.componentLazyLoadDelay
 });
 
 const LoadableNotFound = Loadable({
     loader: () => import('components/pageNotFound/pageNotFound'),
-    loading: Loading
+    loading: Loading,
+    delay: config.componentLazyLoadDelay
 });
 
 export default class Routes extends Component{

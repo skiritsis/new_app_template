@@ -10,7 +10,8 @@ module.exports = {
 
     resolve: {
         alias: {
-            components: path.resolve('./src/components')
+            components: path.resolve('./src/components'),
+            configs: path.resolve('./src/configs')
         }
     },
 

@@ -1,5 +1,6 @@
 /* eslint-env node */
 
+const webpack = require('webpack');
 const merge = require('webpack-merge');
 const commonConfig = require('./common.config.js');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -18,5 +19,11 @@ module.exports = merge(commonConfig, {
         compress: true,
         // enable https
         https: true
-    }
+    },
+
+    plugins: [
+        new webpack.DefinePlugin({
+            ENVIRONMENT: "'production'"
+        })
+    ]
 });
