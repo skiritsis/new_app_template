@@ -66,6 +66,7 @@ module.exports = {
         'eqeqeq': [WARNING, 'smart'],
         'no-shadow': WARNING,
         'no-unused-vars': WARNING,
+        'no-multi-spaces': WARNING,
 
         'react/jsx-no-bind': [WARNING, {
             'ignoreRefs': false,
