@@ -1,0 +1,13 @@
+[ignore]
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+module.name_mapper='^configs' ->'<PROJECT_ROOT>/src/configs'
+module.name_mapper='^components' ->'<PROJECT_ROOT>/src/components'
+
+[strict]

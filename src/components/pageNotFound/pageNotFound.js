@@ -1,6 +1,13 @@
-import React, { Component } from 'react';
+// @flow
+import React from 'react';
 
-export default class PageNotFound extends Component{
+type Props = {
+    location: {
+        pathname: string
+    }
+};
+
+export default class PageNotFound extends React.Component<Props>{
 
     render(){
         return (

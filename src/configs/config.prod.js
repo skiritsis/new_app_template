@@ -1,3 +1,4 @@
+// @flow
 import {configDev} from 'configs/config.dev';
 
 // merge production configs to dev

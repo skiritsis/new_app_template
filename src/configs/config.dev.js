@@ -1,3 +1,4 @@
+// @flow
 const configDev = {
     componentLazyLoadDelay: 300
 };

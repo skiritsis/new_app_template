@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "new_app_template",
-  "description": "A template that can be used to start a new web application faster",
+  "description": "A template meant to be used to quick start new web applications",
   "version": "1.0.0",
   "author": "Sotiris Kiritsis",
   "license": "ISC",
@@ -31,6 +31,9 @@
     "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
 
+    "@babel/plugin-transform-flow-strip-types": "^7.0.0",
+    "flow-bin": "^0.81.0",
+
     "eslint": "^5.6.1",
     "babel-eslint": "^10.0.1",
     "eslint-plugin-react": "^7.11.1"
@@ -40,6 +43,7 @@
     "start-prod": "cross-env NODE_ENV=production webpack-dev-server --open --config webpack/prod.config.js",
     "build": "cross-env NODE_ENV=development webpack --config webpack/dev.config.js",
     "build-prod": "cross-env NODE_ENV=production webpack --config webpack/prod.config.js",
+    "flow": "flow",
     "analyze-bundle": "cross-env NODE_ENV=production webpack --config webpack/prod.config.js --json > dist/compilation-stats.json && webpack-bundle-analyzer dist/compilation-stats.json"
   }
 }

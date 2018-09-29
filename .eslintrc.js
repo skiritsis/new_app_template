@@ -31,7 +31,7 @@ module.exports = {
 
     // set by webpack during compile time
     globals: {
-        ENVIRONMENT: false
+        __ENVIRONMENT__: false
     },
 
     rules: {
@@ -50,6 +50,12 @@ module.exports = {
             'anonymous': 'never',
             'named': 'never',
             'asyncArrow': 'always'
+        }],
+        'keyword-spacing': [WARNING, {
+            'overrides': {
+                'if': {'after': false},
+                'from': {'after': true}
+            },
         }],
         'space-before-blocks': [WARNING, {
             'functions': 'never',

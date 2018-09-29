@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+// @flow
+import React from 'react';
 
-export default class Page2 extends Component{
+export default class Page2 extends React.Component<{}>{
 
     render(){
         return (

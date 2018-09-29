@@ -23,7 +23,7 @@ module.exports = merge(commonConfig, {
 
     plugins: [
         new webpack.DefinePlugin({
-            ENVIRONMENT: "'production'"
+            __ENVIRONMENT__: "'production'"
         })
     ]
 });

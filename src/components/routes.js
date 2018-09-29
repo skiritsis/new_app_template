@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+// @flow
+import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Loadable from 'react-loadable';
 import Loading from 'components/loading/loading';
@@ -28,7 +29,7 @@ const LoadableNotFound = Loadable({
     delay: config.componentLazyLoadDelay
 });
 
-export default class Routes extends Component{
+export default class Routes extends React.Component<{}>{
 
     render(){
         return (
