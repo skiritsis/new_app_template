@@ -3,7 +3,7 @@ import React from 'react';
 
 type Props = {
     location: {
-        pathname: string
+        +pathname: string // read-only property, provided by react router
     }
 };
 

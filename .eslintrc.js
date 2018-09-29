@@ -54,6 +54,7 @@ module.exports = {
         'keyword-spacing': [WARNING, {
             'overrides': {
                 'if': {'after': false},
+                'else': {'after': false},
                 'from': {'after': true}
             },
         }],
