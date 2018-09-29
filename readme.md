@@ -24,3 +24,19 @@ $ cd new_app_template
 $ npm install
 $ npm start
 ```
+
+Alternatively, you can also start the dev-server in production mode.
+```sh
+$ npm run start-prod
+```
+
+To simply build the application(depending on the mode you want).
+```sh
+$ npm run build
+$ npm run build-prod
+```
+
+You can also check and analyze your bundle size in production mode.
+```sh
+$ npm run analyze-bundle
+```
